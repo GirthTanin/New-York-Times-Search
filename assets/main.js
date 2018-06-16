@@ -13,14 +13,12 @@ $(document).ready(function() {
       url: url,
       method: 'GET',
     }).done(function(results) {
-        for (var i = 0; i < 10; i++) { //variable for where we have the 5 value that comes from the input number for records to retreive 
-            //console.log(results.response.docs[i].headline.main);
+        for (var i = 0; i < 5; i++) { //variable for where we have the 5 value that comes from the input number for records to retreive 
             var headline = results.response.docs[i].headline.main;
             //this is how we get the title
             var year = results.response.docs[i].pub_date;
             var year1 = year.slice(0, 4);
-            //console.log(year);
-    
+                
             if (year1 > startYear && year1 < endYear) {
                 //we want these results
                 var articleDiv = $("<div>");

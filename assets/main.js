@@ -2,12 +2,14 @@
 $(document).ready(function() {
     var startYear = 1900; //need these from front end
     var endYear = 1920;
-    
-    
+    var searchTerm = $("#exampleFormControlInput1").val();
+    console.log(searchTerm);      
     
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
-      'api-key': "762530d2f8954471933ab18746b3be13"
+      'api-key': "762530d2f8954471933ab18746b3be13",
+      'q': searchTerm,
+
     });
     $.ajax({
       url: url,

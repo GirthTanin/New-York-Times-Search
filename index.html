@@ -32,7 +32,7 @@
                 <form>
                 <div class="form-group">
                     <label for="exampleFormControlInput1" type ="text">Search Term</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search Term">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" id="search-term" placeholder="Search Term">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Number of Records to Retrive</label>
@@ -45,14 +45,14 @@
                 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Start Year (Optional):</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    <textarea class="form-control" id="start-year" id="exampleFormControlTextarea1" rows="1"></textarea>
                 </div>
                 <div class="form-group">
                         <label for="exampleFormControlTextarea1">End Year (Optional):</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                        <textarea class="form-control" id="end-year" id="exampleFormControlTextarea1" rows="1"></textarea>
                 </div>
                 <div>
-                    <input class="btn btn-light" type="submit" value="Search">
+                    <input id="submit-button" class="btn btn-light" type="submit" value="Search">
                     <input class="btn btn-light" type="reset" value="Clear Results">
                 </div>
                 </form>  
@@ -69,7 +69,7 @@
                               Top Articles
                             </div>
                             <div class="card-body">
-                                <div class = "col-md-12"></div>
+                                <div id="articles" class = "col-md-12"></div>
                                 <div class = "col-md-12"></div>
                             </div>
                           </div>
